@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.siphatloproject.AddMenuActivity"
+    android:background="@drawable/gray3" >
+
+    <TextView
+        android:id="@+id/txtWelcom"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Add Menu"
+        android:textColor="#B40404"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/edOwName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWelcom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:hint="@string/item" />
+
+    <EditText
+        android:id="@+id/edOwnSurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edOwName"
+        android:layout_below="@+id/edOwName"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:hint="@string/pris"
+        android:text="@string/as" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnRegShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edOwnSurn"
+        android:layout_alignRight="@+id/edOwnSurn"
+        android:layout_below="@+id/edOwnSurn"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_design"
+        android:text="@string/add"
+        android:textColor="#FE9A2E" />
+
+</RelativeLayout>

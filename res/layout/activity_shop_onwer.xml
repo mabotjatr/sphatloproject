@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lay"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.siphatloproject.ShopOnwerActivity" >
+
+    <TextView
+        android:id="@+id/txtSpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="@string/sphatlho"
+        android:textColor="#B40404"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/txtMo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSpa"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nw"
+        android:textColor="#FE9A2E"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnRegShop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/button_design"
+        android:text="@string/adds"
+        android:textColor="#FE9A2E" />
+
+    <Button
+        android:id="@+id/btnManageMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnRegShop"
+        android:layout_below="@+id/btnRegShop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_design"
+        android:text="@string/manage"
+        android:textColor="#FE9A2E" />
+
+    <Button
+        android:id="@+id/btnViewOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnManageMenu"
+        android:layout_below="@+id/btnManageMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_design"
+        android:text="@string/view"
+        android:textColor="#FE9A2E" />
+
+</RelativeLayout>

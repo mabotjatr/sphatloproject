@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.siphatloproject.RegisterActivity" 
+    android:background="@drawable/gray3">
+
+    <TextView
+        android:id="@+id/txtReady"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Provide the Following"
+        android:textColor="#B40404"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/edConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:hint="@string/con"
+        android:inputType="textPassword" >
+
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/edOwnPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edPas"
+        android:layout_below="@+id/txtReady"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:hint="@string/hin" />
+
+    <EditText
+        android:id="@+id/edPas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edConfirm"
+        android:layout_below="@+id/edOwnPhone"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:hint="@string/a"
+        android:inputType="textPassword" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edConfirm"
+        android:layout_centerHorizontal="true"
+        
+        android:layout_marginTop="18dp"
+        android:drawSelectorOnTop="true" />
+
+    <Button
+        android:id="@+id/btnRegShop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignRight="@+id/spinner1"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_design"
+        android:text="@string/button"
+        android:textColor="#FE9A2E" />
+
+</RelativeLayout>
